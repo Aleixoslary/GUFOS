@@ -1,0 +1,62 @@
+API 
+
+O Entity Framework é uma "ligação" entre o BD e o Back.
+
+Podemos usar o Code First onde criamos os Models do sistema e o Framework gera o BD.
+
+No Database First cria-se o BD primeiro e o Framework gera os Models.
+
+***CONTEXTO / CONTEXT-- RELECIONA OS PROJETOS COM O BANCO DE DADOS (BASE DE DADOS);
+
+***SCAFFOLD-- CRIA O MODELS
+
+** SCAFFOLD PRIMEIRO CHAMA-SE A MÁQUINA, SEGUNDO O DATABASE, TERCEIRO O USUÁRIO E A SENHA.
+	-o Cria o Model 
+	-d 
+
+***Async - Deixa os métodos rodando independentes, sem a necessidade de rodar 1 por 1,rodam aleatóriamente.
+
+---------------------------------------------------------------------
+
+BadRequest - 400- O usuário digitou/solicitou o objeto errado.
+
+NotFound - 404 O objeto não existe no Banco de Dados
+
+NoContent - 204 Deu certo, mas não retorna nada
+
+PACOTES PARA O FRAMEWORKS
+
+//INSTALAMOS O Entity Framework
+//dotnet tool install --global dotnet-ef
+
+//OS DOIS PRECISAM SER INSTALADOS DE PROJETO PARA PROJETO
+
+//Baixamos o pacote SQLServer do Entity Framework
+//dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+//Baixamos o pacote que irá escrever nossos códigos
+//dotnet add package Microsoft.EntityFrameworkCore.Design
+
+//Testamos a instalação do EF
+//dotnet ef
+
+
+
+CRIANDO OS MODELS
+
+//Código que criará o nosso contexto da Base de Dados e nossos Models
+//dotnet ef dbcontext scaffold "Server=LAB103401\SQLEXPRESS; Database=Gufos; User Id=sa; Password=132" Microsoft.EntityFrameworkCore.SqlServer -o Models -d
+
+
+CRIANDO OS CONTROLLERS
+
+ //Definimos nossa rota do controller e dizemos que é um controller de API *CONTROLLER ESPECIFICO DE API* 
+	NÃO PULAR LINHA ENTRE A ROTA E APICONTROLLER	
+    [Route("api/[Controller]")]
+    [ApiController]
+
+
+//para adicionar a árvore de objetos adicionados uma biblioteca JSON
+//dotnet add package Microsoft.AspNetCore.Mvc.NewtonJson
+
+------

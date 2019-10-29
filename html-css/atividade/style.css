@@ -1,0 +1,44 @@
+
+*{
+    margin: 0; 
+}
+body{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial;
+    }
+
+header{
+    background-color: #D4CCE6;
+    padding-top:60px;
+    padding-bottom: 60px;
+    font-size:20px;
+    text-align: center;
+    
+}
+P{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.texto{
+    margin-bottom: 15px;
+}
+
+.img2{
+    width: 100%;
+    margin-bottom: -5px;
+    
+}
+
+.img1{
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: #E7D3DD;
+    padding: 30px;
+    text-align: center; 
+    
+}

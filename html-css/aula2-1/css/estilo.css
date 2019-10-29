@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: #ECEFD9;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+
+nav{
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 512px;
+}
+
+.menu a{
+    color: #707070;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: arial;
+}
+
+.banner{
+    background-image: url(../imagens/lobostudio-hamburg-MAjtbFMV5_k-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+
+main{
+    width: 1200px;
+    margin: auto;
+    font-family: arial;
+    color: #707070;
+    text-align: justify;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+    }
+
+.texto{
+    width:500px;
+}
+
+footer{
+    background-color: #F1E4F2;
+
+}
+
+.rodape{
+    display: flex;
+    width: 1366px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+   
+}
